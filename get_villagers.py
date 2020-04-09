@@ -78,6 +78,8 @@ for index, name in enumerate(names):
         name = "Jacob"
     if name == "SporkNACracklePAL":
         name = "Spork"
+    if name == "Ren\u00e9e":
+        name = "Renée"
 
     print(f"Looking for {name}...")
 
@@ -99,7 +101,7 @@ for index, name in enumerate(names):
         image_src_url = village_img_src
 
     ac_villager_obj = {
-        "name": names[index],
+        "name": name,
         "personality": personalities[index],
         "species": species[index],
         "birthday": birthdays[index],
